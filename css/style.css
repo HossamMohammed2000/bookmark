@@ -1,0 +1,116 @@
+h1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* padding-block: 8px; */
+    margin-bottom: 8px;
+    height: 25%;
+    width: 100%;
+    background-color: #fec260;
+    z-index: -1;
+    transition:  height 350ms;
+    
+}
+h1:hover::before{
+    height: 50%;
+    cursor: pointer;
+}
+body{
+    background-color: #F7ECDE;
+    height: 100vh;
+}
+h1{
+    padding-block: 8px;
+    margin-bottom: 8px;
+}
+#BookmarkName{
+    color: black;
+ }
+.bookmark-body{
+    border-top:#352e28 2px dotted ;
+    border-width: 2px 0 2px 0;
+}
+.bookmark-body .first{
+    color: #3DA55C;
+}
+.bookmark-body .second{
+    color: #B3AC4A;
+}
+.bookmark-body .title-a{
+    color: #3DA55C;
+}
+.bookmark-body .title-b{
+    color: #72A955;
+}
+.bookmark-body .title-c{
+    color: #84A951;
+}
+.bookmark-body .title-d{
+    color: #A3AB4C;
+}
+.site-name label i{
+    padding-bottom: .5rem;
+}
+.site-url label i{
+    padding-bottom: .5rem;
+}
+.my-button{
+    color:#fff;
+    background-color: #D1512D;
+    padding: 6px;
+    
+    border-radius: 6px;
+    border-color: #D1512D;
+    cursor: pointer;
+}
+.my-button::after{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border: dotted 2px #352e28;
+}
+table{
+    margin-top: 24px;
+    margin-bottom: 16px;
+    position: relative;
+}
+table ::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    /* border-top: 50%; */
+    /* border: #352e28 dotted 2px; */
+    top: 0;
+    left: 0;
+    padding-top: 25px;
+    /* border-style: dotted; */
+}
+    .visit-button{
+    background-color: #9EB23B;
+    color: #fff;
+    border-radius: 6px;
+    border-color: #9EB23B;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom-width:.8px ;
+    font-weight: 400;
+    line-height: 24px;
+}
+.delete-button{
+    background-color: #EB1D36;
+    color: #fff;
+    border-radius: 6px;
+    border-color:#EB1D36;
+    font-size: 16px;
+    padding-left: 12px;
+    padding-right: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-bottom-width: .8px;
+    font-weight: 400;
+    line-height: 24px;
+}

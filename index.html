@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- !=======start of core fontawesome======== -->
+    <link rel="stylesheet" href="./css/all.min.css">
+        <!-- !=======end of core fontawesome======= -->
+    <!-- &=======start of bootstrap css==== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+       <!-- &=======end of bootstrap css==== -->
+           <!-- *=======start of style css==== -->
+    <link rel="stylesheet" href="./css/style.css">
+       <!-- *=======end of style css==== -->
+    <title>Bookmarker</title>
+</head>
+<body>
+    <main class="position-relative py-5">
+        <div class="container d-flex flex-column justify-content-center align align-items-center">
+            <h1 class="py-1 position-relative text-center">
+                Bookmarker
+            </h1>
+            <div class="bookmark-body container   p-3 py-4 mt-5 d-flex flex-column justify-content-center align-items-center gap-4">
+                <h2>
+                    <i class="fa-solid fa-bookmark first"></i>
+                      <span class="title-a">Bookmark</span> 
+                      <span class="title-b">your</span> 
+                      <span class="title-c">favorite</span> 
+                      <span class="title-d">sites</span>
+                     <i class="fa-solid fa-bookmark second"></i>
+                </h2>
+            </div>
+            <div class="site-name w-100 d-flex  flex-column">
+                <label for="bookmarkName" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-book-bookmark pe-2"></i>
+                    Site Name
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control  is-valid" id="BookmarkName" placeholder="BookmarkName">
+                        <div class="invalid-feedback">
+                            <i class="fas fa-exclamation-circle me-2"></i>Site name is required
+                          </div>
+                      </div>
+                </label>
+            </div>
+            <div class="site-url w-100 d-flex  flex-column">
+                <label for="bookmarkUrl" class="pb-2 fw-semibold">
+                    <i class="fa-solid fa-link pe-2"></i>
+                    Site URL
+                    <div class="form-floating mb-3">
+                        <input type="url" class="form-control is-valid" oninput="searchElement()" id="bookmarkURL" placeholder="Website URL">
+                        <div class="invalid-feedback">
+                            <i class="fas fa-exclamation-circle me-2"></i>Please enter a valid
+                            URL
+                          </div>
+                       
+                      </div>
+                </label>
+            </div>
+            <button  type= "button" class="px-5 my-button"  onclick="addBookmark()">Submit</button>
+            
+            <table class="table mt-4 text-center bg-light">
+                <thead>
+                    <tr>
+                        <th class="text-capitalize">index</th>
+                        <th class="text-capitalize">Website Name</th>
+                        <th class="text-capitalize">Visit</th>
+                        <th class="text-capitalize">Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="table-content">
+                  
+            
+
+                </tbody>
+            </table>
+        </div>
+        
+    
+    </main>
+    
+
+
+    <!-- ^=========start of bootstrap js==== -->
+     <script src="./js/bootstrap.bundle.min.js"></script>
+     <!-- ^=========end of bootstrap js==== -->
+      <!-- *=========start of main js==== -->
+       <script src="./js/index.js"></script>
+       <!-- *========end of main js==== -->
+</body>
+</html>
